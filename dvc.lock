@@ -1,0 +1,27 @@
+schema: '2.0'
+stages:
+  train:
+    cmd: python src/train.py
+    deps:
+    - path: data/MNIST
+      md5: 563f931b5aa3d66aaee35ca9ea59ff3e.dir
+      size: 66544770
+      nfiles: 8
+    - path: src/model/model.py
+      md5: e8100a70a39a1ad6271218688ba522a0
+      size: 1176
+    params:
+      params.yaml:
+        train:
+          model:
+            name: Baseline
+            conv1_filters: 32
+            conv2_filters: 64
+            dropout1_prob: 0.25
+            dropout2_prob: 0.5
+            no_of_class: 10
+          optimizer:
+            lr: 0.001
+          epochs: 1
+          model_save_location: models/
+          batchsize: 32

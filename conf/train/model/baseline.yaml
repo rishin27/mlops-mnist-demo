@@ -1,0 +1,6 @@
+name: Baseline
+conv1_filters: 32
+conv2_filters: 64
+dropout1_prob: 0.25
+dropout2_prob: 0.5
+no_of_class: 10

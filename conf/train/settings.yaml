@@ -1,0 +1,3 @@
+epochs: 1
+model_save_location: "models/"
+batchsize: 32

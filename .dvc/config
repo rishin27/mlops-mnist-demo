@@ -1,5 +1,8 @@
 [core]
     remote = storage
     autostage = true
+    analytics = false
+[hydra]
+    enabled = True
 ['remote "storage"']
     url = s3://mnistr
