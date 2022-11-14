@@ -24,4 +24,4 @@ stages:
             lr: 0.001
           epochs: 1
           model_save_location: models/
-          batchsize: 32
+          batchsize: 16
